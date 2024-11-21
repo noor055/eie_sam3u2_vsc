@@ -379,7 +379,7 @@ def get_jlink_srch_path(exe_name: str):
 
         install_roots = [
             "C:\\Program Files\\SEGGER\\",
-            "C:\\Program Files (x86)\\SEGGER\\",
+            "C:\\Program Files\\SEGGER\\JLink_V798i",
             "D:\\SEGGER\\JLink_V798i",
         ]
 
@@ -444,7 +444,7 @@ def get_gcc_srch_path_win32():
     import winreg
 
     REGISTRY_PATHS = [(winreg.HKEY_LOCAL_MACHINE, "SOFTWARE\\WOW6432Node\\ARM")]
-    INSTALL_PATHS = ["D:\\Arm_GNU_Toolchain\\13_3_rel1\\arm-none-eabi"]
+    INSTALL_PATHS = ["C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\13.3 rel1\\arm-none-eabi"]
 
     gcc_vers = defaultdict(set)  # Map from version numbers to discovered paths.
 
